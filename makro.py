@@ -23,7 +23,7 @@ except ImportError:
         print("Hata: ttkbootstrap kurulamadı. Lütfen manuel olarak 'pip install ttkbootstrap' komutunu çalıştırın.")
         sys.exit(1)
 
-# --- Sabitler ve Ayarlar ---
+
 DEFAULT_CPS = 50.0 
 TEMEL_GECIKME = 1.0 / DEFAULT_CPS 
 PRESS_RELEASE_GECIKME = 0.0001
@@ -33,13 +33,12 @@ MAX_CPS = 70.0
 MIN_CPS = 1.0 
 MAX_JITTER_PERCENT = 30.0
 
-# --- Renk Kodları (Siyah ve Yeşil) ---
+
 RENK_ARKA_PLAN = "#1c1c1c"
 RENK_VURGU = "#00cc00"
 RENK_HATA = "#ff4444"
 RENK_BILGI = "#aaaaaa"
 
-# --- Tuş Atamaları ---
 DEFAULT_TUS_ATAMALARI = {
     "sol_tik": "1",
     "sag_tik": "2",
@@ -47,7 +46,6 @@ DEFAULT_TUS_ATAMALARI = {
 }
 print("\n[BYFORGEON] Sistem Başlatılıyor...")
 
-# --- Yardımcı Fonksiyonlar ---
 def load_tuslar():
     if os.path.exists(TUS_DOSYA):
         try:
